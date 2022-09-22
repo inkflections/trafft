@@ -1,0 +1,1349 @@
+$(window).on("scroll touchmove", function()
+{
+    if ($("#feature-image-one").length && $(document).scrollTop() <= $("#feature-image-one").offset().top)
+    {
+        if ($('.left-side').hasClass('beauty-salons')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/beauty/feature-schedule@2x.png)');
+            $('#feature-image-one').css('opacity', '1')
+            $('#feature-image-two, #feature-image-three, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+        }
+        if ($('.left-side').hasClass('barbershop')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/barbershop/feature-schedule@2x.png)');
+            $('#feature-image-one').css('opacity', '1')
+            $('#feature-image-two, #feature-image-three, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+        }
+        if ($('.left-side').hasClass('healthcare')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/healthcare/feature-schedule@2x.png)');
+            $('#feature-image-one').css('opacity', '1')
+            $('#feature-image-two, #feature-image-three, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+        }
+        if ($('.left-side').hasClass('dental')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/dental/feature-schedule@2x.png)');
+            $('#feature-image-one').css('opacity', '1')
+            $('#feature-image-two, #feature-image-three, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+        }
+        if ($('.left-side').hasClass('sports')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/sports-and-training/feature-schedule@2x.png)');
+            $('#feature-image-one').css('opacity', '1')
+            $('#feature-image-two, #feature-image-three, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+        }
+        if ($('.left-side').hasClass('gyms')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/gym/feature-schedule@2x.png)');
+            $('#feature-image-one').css('opacity', '1')
+            $('#feature-image-two, #feature-image-three, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+        }
+        if ($('.left-side').hasClass('personal-trainers')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/personal-trainers/feature-schedule@2x.png)');
+            $('#feature-image-one').css('opacity', '1')
+            $('#feature-image-two, #feature-image-three, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+        }
+        if ($('.left-side').hasClass('school')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/education-and-consulting/feature-schedule@2x.png)');
+            $('#feature-image-one').css('opacity', '1')
+            $('#feature-image-two, #feature-image-three, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+        }
+        if ($('.left-side').hasClass('administration')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/administration-and-officials/feature-schedule@2x.png)');
+            $('#feature-image-one').css('opacity', '1')
+            $('#feature-image-two, #feature-image-three, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+        }
+        if ($('.left-side').hasClass('cleaning')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/cleaning/feature-schedule@2x.png)');
+            $('#feature-image-one').css('opacity', '1')
+            $('#feature-image-two, #feature-image-three, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+        }
+        if ($('.left-side').hasClass('personal')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/personal-services/feature-schedule@2x.png)');
+            $('#feature-image-one').css('opacity', '1')
+            $('#feature-image-two, #feature-image-three, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+        }
+        if ($('.left-side').hasClass('events')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/events-and-entertainment/feature-schedule@2x.png)');
+            $('#feature-image-one').css('opacity', '1')
+            $('#feature-image-two, #feature-image-three, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+        }
+    }
+    if ($("#feature-image-two").length && $(document).scrollTop() >= $("#feature-image-one").offset().top && $(document).scrollTop() < $("#feature-image-two").offset().top  )
+    {
+        if ($('.left-side').hasClass('beauty-salons')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/beauty/feature-pricing@2x.png)');
+            $('#feature-image-one, #feature-image-three, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-two').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('barbershop')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/barbershop/feature-pricing@2x.png)');
+            $('#feature-image-one, #feature-image-three, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-two').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('healthcare')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/healthcare/feature-pricing@2x.png)');
+            $('#feature-image-one, #feature-image-three, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-two').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('dental')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/dental/feature-pricing@2x.png)');
+            $('#feature-image-one, #feature-image-three, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-two').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('sports')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/sports-and-training/feature-pricing@2x.png)');
+            $('#feature-image-one, #feature-image-three, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-two').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('gyms')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/gym/feature-pricing@2x.png)');
+            $('#feature-image-one, #feature-image-three, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-two').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('personal-trainers')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/personal-trainers/feature-pricing@2x.png)');
+            $('#feature-image-one, #feature-image-three, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-two').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('school')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/education-and-consulting/feature-pricing@2x.png)');
+            $('#feature-image-one, #feature-image-three, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-two').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('administration')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/administration-and-officials/feature-pricing@2x.png)');
+            $('#feature-image-one, #feature-image-three, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-two').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('cleaning')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/cleaning/feature-pricing@2x.png)');
+            $('#feature-image-one, #feature-image-three, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-two').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('personal')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/personal-services/feature-pricing@2x.png)');
+            $('#feature-image-one, #feature-image-three, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-two').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('events')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/events-and-entertainment/feature-pricing@2x.png)');
+            $('#feature-image-one, #feature-image-three, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-two').css('opacity', '1')
+        }
+    };
+    if ($("#feature-image-three").length && $(document).scrollTop() >= $("#feature-image-two").offset().top && $(document).scrollTop() < $("#feature-image-three").offset().top)
+    {
+        if ($('.left-side').hasClass('beauty-salons')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/beauty/feature-location@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-three').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('barbershop')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/barbershop/feature-location@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-three').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('healthcare')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/healthcare/feature-location@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-three').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('dental')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/dental/feature-location@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-three').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('sports')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/sports-and-training/feature-location@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-three').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('gyms')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/gym/feature-location@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-three').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('personal-trainers')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/personal-trainers/feature-location@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-three').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('school')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/education-and-consulting/feature-location@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-three').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('administration')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/administration-and-officials/feature-location@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-three').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('cleaning')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/cleaning/feature-location@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-three').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('personal')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/personal-services/feature-location@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-three').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('events')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/events-and-entertainment/feature-location@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-four, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-three').css('opacity', '1')
+        }
+    };
+    if ($("#feature-image-four").length && $(document).scrollTop() >= $("#feature-image-three").offset().top && $(document).scrollTop() < $("#feature-image-four").offset().top )
+    {
+        if ($('.left-side').hasClass('beauty-salons')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/beauty/feature-stats@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-four').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('barbershop')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/barbershop/feature-stats@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-four').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('healthcare')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/healthcare/feature-stats@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-four').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('dental')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/dental/feature-stats@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-four').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('sports')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/sports-and-training/feature-stats@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-four').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('gyms')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/gym/feature-stats@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-four').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('personal-trainers')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/personal-trainers/feature-stats@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-four').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('school')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/education-and-consulting/feature-stats@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-four').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('administration')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/administration-and-officials/feature-stats@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-four').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('cleaning')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/cleaning/feature-stats@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-four').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('personal')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/personal-services/feature-stats@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-four').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('events')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/events-and-entertainment/feature-stats@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-five, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-four').css('opacity', '1')
+        }
+    };
+    if ($("#feature-image-five").length && $(document).scrollTop() >= $("#feature-image-four").offset().top && $(document).scrollTop() < $("#feature-image-five").offset().top )
+    {
+        if ($('.left-side').hasClass('beauty-salons')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/beauty/feature-responsive@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-four, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-five').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('barbershop')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/barbershop/feature-responsive@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-four, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-five').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('healthcare')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/healthcare/feature-responsive@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-four, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-five').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('dental')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/dental/feature-responsive@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-four, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-five').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('sports')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/sports-and-training/feature-responsive@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-four, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-five').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('gyms')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/gym/feature-responsive@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-four, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-five').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('personal-trainers')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/personal-trainers/feature-responsive@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-four, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-five').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('school')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/education-and-consulting/feature-responsive@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-four, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-five').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('administration')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/administration-and-officials/feature-responsive@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-four, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-five').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('cleaning')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/cleaning/feature-responsive@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-four, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-five').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('personal')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/personal-services/feature-responsive@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-four, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-five').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('events')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/events-and-entertainment/feature-responsive@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-four, #feature-image-six').css('opacity', '0.3')
+            $('#feature-image-five').css('opacity', '1')
+        }
+    };
+    if ($("#feature-image-six").length && $(document).scrollTop() >= $("#feature-image-five").offset().top && $(document).scrollTop() < $("#feature-image-six").offset().top )
+    {
+        if ($('.left-side').hasClass('beauty-salons')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/beauty/feature-noshows@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-four, #feature-image-five').css('opacity', '0.3')
+            $('#feature-image-six').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('barbershop')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/barbershop/feature-noshows@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-four, #feature-image-five').css('opacity', '0.3')
+            $('#feature-image-six').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('healthcare')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/healthcare/feature-noshows@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-four, #feature-image-five').css('opacity', '0.3')
+            $('#feature-image-six').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('dental')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/dental/feature-noshows@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-four, #feature-image-five').css('opacity', '0.3')
+            $('#feature-image-six').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('personal-trainers')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/personal-trainers/feature-noshows@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-four, #feature-image-five').css('opacity', '0.3')
+            $('#feature-image-six').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('school')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/education-and-consulting/feature-noshows@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-four, #feature-image-five').css('opacity', '0.3')
+            $('#feature-image-six').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('cleaning')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/cleaning/feature-noshows@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-four, #feature-image-five').css('opacity', '0.3')
+            $('#feature-image-six').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('personal')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/personal-services/feature-noshows@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-four, #feature-image-five').css('opacity', '0.3')
+            $('#feature-image-six').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('events')) {
+            $('#sticky-images').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/events-and-entertainment/feature-noshows@2x.png)')
+            $('#feature-image-one, #feature-image-two, #feature-image-three, #feature-image-four, #feature-image-five').css('opacity', '0.3')
+            $('#feature-image-six').css('opacity', '1')
+        }
+    };
+
+    if ($("#first-feature").length && $("#feature-image-six").length && $(document).scrollTop() > $("#feature-image-six").offset().top && $(document).scrollTop() <= $("#first-feature").offset().top)
+    {
+        if ($('.left-side').hasClass('more-feature-beauty-salons')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/beauty/more-feature-automated@2x.webp)');
+            $('#first-feature').css('opacity', '1')
+            $('#second-feature, #third-feature, #forth-feature').css('opacity', '0.3')
+        }
+        if ($('.left-side').hasClass('more-feature-barbershop')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/barbershop/more-feature-automated@2x.webp)');
+            $('#first-feature').css('opacity', '1')
+            $('#second-feature, #third-feature, #forth-feature').css('opacity', '0.3')
+        }
+        if ($('.left-side').hasClass('more-feature-healthcare')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/healthcare/more-feature-automated@2x.webp)');
+            $('#first-feature').css('opacity', '1')
+            $('#second-feature, #third-feature, #forth-feature').css('opacity', '0.3')
+        }
+        if ($('.left-side').hasClass('more-feature-dental')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/dental/more-feature-automated@2x.webp)');
+            $('#first-feature').css('opacity', '1')
+            $('#second-feature, #third-feature, #forth-feature').css('opacity', '0.3')
+        }
+        if ($('.left-side').hasClass('more-feature-personal-trainers')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/personal-trainers/more-feature-automated@2x.webp)');
+            $('#first-feature').css('opacity', '1')
+            $('#second-feature, #third-feature, #forth-feature').css('opacity', '0.3')
+        }
+        if ($('.left-side').hasClass('more-feature-school')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/education-and-consulting/more-feature-automated@2x.webp)');
+            $('#first-feature').css('opacity', '1')
+            $('#second-feature, #third-feature, #forth-feature').css('opacity', '0.3')
+        }
+        if ($('.left-side').hasClass('more-feature-cleaning')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/cleaning/more-feature-automated@2x.webp)');
+            $('#first-feature').css('opacity', '1')
+            $('#second-feature, #third-feature, #forth-feature').css('opacity', '0.3')
+        }
+        if ($('.left-side').hasClass('more-feature-personal')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/personal-services/more-feature-automated@2x.webp)');
+            $('#first-feature').css('opacity', '1')
+            $('#second-feature, #third-feature, #forth-feature').css('opacity', '0.3')
+        }
+    }
+// If page don't have no more no shows
+    if ($("#first-feature").length && $("#feature-image-five").length && $(document).scrollTop() > $("#feature-image-five").offset().top && $(document).scrollTop() <= $("#first-feature").offset().top) {
+        if ($('.left-side').hasClass('more-feature-gyms')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/gym/more-feature-automated@2x.webp)');
+            $('#first-feature').css('opacity', '1')
+            $('#second-feature, #third-feature, #forth-feature').css('opacity', '0.3')
+        }
+    }
+
+    if ($("#first-feature").length && $(document).scrollTop() >= $("#first-feature").offset().top && $(document).scrollTop() < $("#second-feature").offset().top  )
+    {
+        if ($('.left-side').hasClass('more-feature-beauty-salons')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/beauty/more-feature-reminder@2x.png)');
+            $('#first-feature, #third-feature, #forth-feature').css('opacity', '0.3')
+            $('#second-feature').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('more-feature-barbershop')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/barbershop/more-feature-reminder@2x.png)');
+            $('#first-feature, #third-feature, #forth-feature').css('opacity', '0.3')
+            $('#second-feature').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('more-feature-healthcare')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/healthcare/more-feature-reminder@2x.png)');
+            $('#first-feature, #third-feature, #forth-feature').css('opacity', '0.3')
+            $('#second-feature').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('more-feature-dental')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/dental/more-feature-reminder@2x.png)');
+            $('#first-feature, #third-feature, #forth-feature').css('opacity', '0.3')
+            $('#second-feature').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('more-feature-gyms')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/gym/more-feature-reminder@2x.png)');
+            $('#first-feature, #third-feature, #forth-feature').css('opacity', '0.3')
+            $('#second-feature').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('more-feature-personal-trainers')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/personal-trainers/more-feature-reminder@2x.png)');
+            $('#first-feature, #third-feature, #forth-feature').css('opacity', '0.3')
+            $('#second-feature').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('more-feature-school')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/education-and-consulting/more-feature-reminder@2x.png)');
+            $('#first-feature, #third-feature, #forth-feature').css('opacity', '0.3')
+            $('#second-feature').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('more-feature-cleaning')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/cleaning/more-feature-reminder@2x.png)');
+            $('#first-feature, #third-feature, #forth-feature').css('opacity', '0.3')
+            $('#second-feature').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('more-feature-personal')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/personal-services/more-feature-reminder@2x.png)');
+            $('#first-feature, #third-feature, #forth-feature').css('opacity', '0.3')
+            $('#second-feature').css('opacity', '1')
+        }
+    };
+    if ($("#second-feature").length && $(document).scrollTop() >= $("#second-feature").offset().top && $(document).scrollTop() < $("#third-feature").offset().top)
+    {
+        if ($('.left-side').hasClass('more-feature-beauty-salons')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/beauty/more-feature-monitor@2x.webp)')
+            $('#first-feature, #second-feature, #forth-feature').css('opacity', '0.3')
+            $('#third-feature').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('more-feature-barbershop')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/barbershop/more-feature-monitor@2x.webp)')
+            $('#first-feature, #second-feature, #forth-feature').css('opacity', '0.3')
+            $('#third-feature').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('more-feature-healthcare')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/healthcare/more-feature-monitor@2x.webp)');
+            $('#first-feature, #second-feature, #forth-feature').css('opacity', '0.3')
+            $('#third-feature').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('more-feature-dental')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/dental/more-feature-monitor@2x.webp)');
+            $('#first-feature, #second-feature, #forth-feature').css('opacity', '0.3')
+            $('#third-feature').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('more-feature-gyms')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/gym/more-feature-monitor@2x.webp)');
+            $('#first-feature, #second-feature, #forth-feature').css('opacity', '0.3')
+            $('#third-feature').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('more-feature-personal-trainers')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/personal-trainers/more-feature-monitor@2x.webp)');
+            $('#first-feature, #second-feature, #forth-feature').css('opacity', '0.3')
+            $('#third-feature').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('more-feature-school')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/education-and-consulting/more-feature-monitor@2x.webp)');
+            $('#first-feature, #second-feature, #forth-feature').css('opacity', '0.3')
+            $('#third-feature').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('more-feature-cleaning')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/cleaning/more-feature-monitor@2x.webp)');
+            $('#first-feature, #second-feature, #forth-feature').css('opacity', '0.3')
+            $('#third-feature').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('more-feature-personal')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/personal-services/more-feature-monitor@2x.webp)');
+            $('#first-feature, #second-feature, #forth-feature').css('opacity', '0.3')
+            $('#third-feature').css('opacity', '1')
+        }
+    };
+    if ($("#third-feature").length && $(document).scrollTop() >= $("#third-feature").offset().top && $(document).scrollTop() < $("#forth-feature").offset().top )
+    {
+        if ($('.left-side').hasClass('more-feature-beauty-salons')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/beauty/more-feature-security@2x.webp)')
+            $('#first-feature, #second-feature, #third-feature').css('opacity', '0.3')
+            $('#forth-feature').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('more-feature-barbershop')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/barbershop/more-feature-security@2x.png)')
+            $('#first-feature, #second-feature, #third-feature').css('opacity', '0.3')
+            $('#forth-feature').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('more-feature-healthcare')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/healthcare/more-feature-security@2x.png)');
+            $('#first-feature, #second-feature, #third-feature').css('opacity', '0.3')
+            $('#forth-feature').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('more-feature-dental')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/dental/more-feature-security@2x.png)');
+            $('#first-feature, #second-feature, #third-feature').css('opacity', '0.3')
+            $('#forth-feature').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('more-feature-gyms')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/gym/more-feature-security@2x.png)');
+            $('#first-feature, #second-feature, #third-feature').css('opacity', '0.3')
+            $('#forth-feature').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('more-feature-personal-trainers')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/personal-trainers/more-feature-security@2x.png)');
+            $('#first-feature, #second-feature, #third-feature').css('opacity', '0.3')
+            $('#forth-feature').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('more-feature-school')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/education-and-consulting/more-feature-security@2x.png)');
+            $('#first-feature, #second-feature, #third-feature').css('opacity', '0.3')
+            $('#forth-feature').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('more-feature-cleaning')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/cleaning/more-feature-security@2x.png)');
+            $('#first-feature, #second-feature, #third-feature').css('opacity', '0.3')
+            $('#forth-feature').css('opacity', '1')
+        }
+        if ($('.left-side').hasClass('more-feature-personal')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/personal-services/more-feature-security@2x.png)');
+            $('#first-feature, #second-feature, #third-feature').css('opacity', '0.3')
+            $('#forth-feature').css('opacity', '1')
+        }
+    };
+
+    if ($("#first-preview").length && $(document).scrollTop() <= $("#first-preview").offset().top) {
+        if ($('.left-side').hasClass('more-feature-preview-section')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/beauty/more-feature-automated@2x.webp)');
+            $('#first-preview').css('opacity', '1')
+            $('#second-preview, #third-preview, #forth-preview').css('opacity', '0.3')
+        }
+    }
+
+    if ($("#second-preview").length && $(document).scrollTop() >= $("#first-preview").offset().top && $(document).scrollTop() < $("#second-preview").offset().top  ) {
+        if ($('.left-side').hasClass('more-feature-preview-section')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/beauty/more-feature-reminder@2x.webp)');
+            $('#first-preview, #third-preview, #forth-preview').css('opacity', '0.3')
+            $('#second-preview').css('opacity', '1')
+        }
+    }
+
+    if ($("#third-preview").length && $(document).scrollTop() >= $("#second-preview").offset().top && $(document).scrollTop() < $("#third-preview").offset().top) {
+        if ($('.left-side').hasClass('more-feature-preview-section')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/hero/hero-stats.webp)');
+            $('#first-preview, #second-preview, #forth-preview').css('opacity', '0.3')
+            $('#third-preview').css('opacity', '1')
+        }
+    }
+
+    if ($("#forth-preview").length && $(document).scrollTop() >= $("#third-preview").offset().top && $(document).scrollTop() < $("#forth-preview").offset().top ) {
+        if ($('.left-side').hasClass('more-feature-preview-section')) {
+            $('#sticky-image-more-features').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/beauty/more-feature-security@2x.webp)')
+            $('#first-preview, #second-preview, #third-preview').css('opacity', '0.3')
+            $('#forth-preview').css('opacity', '1')
+        }
+    }
+
+
+});
+
+let coll = document.getElementsByClassName("collapsible");
+let i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        $("svg").find(".tab-icon").css({ filter: 'brightness(0) invert(1)' });
+
+        let content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
+
+function prices () {
+    let price = {
+        // earlyBird: 5,
+        basic: 12,
+        pro: 24,
+        expert: 48,
+        type: 'billed monthly',
+        perMonth: '/mo',
+        crossedPrice: 17,
+    };
+
+    if (document.getElementById("monthly").checked) {
+        // price.earlyBird = 5;
+        price.basic = 12;
+        price.pro = 24;
+        price.expert = 48;
+        price.type = 'billed monthly';
+        price.perMonth = '/mo';
+        price.crossedPriceBasic = 12;
+        price.crossedPricePro = 24;
+        price.crossedPriceExpert = 48;
+    }
+
+    if (document.getElementById("yearly").checked) {
+        // price.earlyBird = 50;
+        price.basic = 120;
+        price.pro = 228;
+        price.expert = 460;
+        price.type = "billed yearly";
+        price.perMonth = '/year';
+        price.crossedPriceBasic = 120;
+        price.crossedPricePro = 228;
+        price.crossedPriceExpert = 460;
+    }
+    document.getElementsByClassName('price-num')[0].innerHTML = price.basic;
+    // document.getElementsByClassName('price-num')[1].innerHTML = price.earlyBird;
+    document.getElementsByClassName('price-num')[1].innerHTML = price.pro;
+    document.getElementsByClassName('price-num')[2].innerHTML = price.expert;
+
+    document.getElementsByClassName('type')[0].innerHTML = price.type === "billed yearly" ? price.type + "<span style='color: #0064F4'> (2 months free!)</span>" : price.type + '';
+    document.getElementsByClassName('type')[1].innerHTML = price.type === "billed yearly" ? price.type + "<span style='color: #E6EFFE'> (2.5 months free)</span>" : price.type + '';
+    document.getElementsByClassName('type')[2].innerHTML = price.type === "billed yearly" ? price.type + "<span style='color: #0064F4'> (2.5 months free)</span>" : price.type + '';
+    document.getElementsByClassName('per-month')[0].innerHTML = price.perMonth;
+    document.getElementsByClassName('per-month')[1].innerHTML = price.perMonth;
+    document.getElementsByClassName('per-month')[2].innerHTML = price.perMonth;
+    // document.getElementsByClassName('crossed-price-sum')[0].innerHTML = price.crossedPriceBasic;
+    // document.getElementsByClassName('crossed-price-sum')[1].innerHTML = price.crossedPricePro;
+    // document.getElementsByClassName('crossed-price-sum')[2].innerHTML = price.crossedPriceExpert;
+}
+
+function setToActive(me, otherId){
+    me.className='active';
+
+    $("#toogleImage img.top").toggleClass("transparent");
+    if (otherId === 'tab1') {
+        // document.getElementById("complete-solution-img").src = window.trafftAssetsDir[0] + '/images/hero/trafft-dashboard.webp';
+
+        document.getElementById('complete-solution-dashboard-grid').style.display = 'flex';
+        document.getElementById('complete-solution-booking-grid').style.display = 'none';
+    }
+    if (otherId === 'tab2') {
+        // document.getElementById("complete-solution-img").src= window.trafftAssetsDir[0] + '/images/hero/appointment-booking.webp';
+
+        document.getElementById('complete-solution-dashboard-grid').style.display = 'none';
+        document.getElementById('complete-solution-booking-grid').style.display = 'flex';
+    }
+    document.getElementById(otherId).className='inactive';
+}
+
+function scrollToCustomPlanSection () {
+    $('html, body').animate({
+        scrollTop: $('#custom-plan-section').offset().top - 100
+    }, 500);
+}
+
+function scrollToAddMoreSection () {
+    $('html, body').animate({
+        scrollTop: $('#add-more-section').offset().top - 100
+    }, 500);
+}
+
+jQuery(document).ready(function($) {
+    const mediaQuery = window.matchMedia('(max-width: 768px)')
+    if (window.location.pathname === "/pricing/") {
+        $("#limited-time-offer").hide();
+    } else {
+        $('#hero-section-wrapper').css('margin-top', '-145px');
+        $("#limited-time-offer").fadeIn(1500);
+        if (mediaQuery.matches) {
+            $('#hero-section-wrapper').css('margin-top', '-250px');
+        }
+    }
+});
+
+// Black Friday counter
+// function initializeClock() {
+//   const clock = $('.banner-counter');
+//   const hoursSpan = $('.hours');
+//   const minutesSpan = $('.minutes');
+//   const secondsSpan = $('.seconds');
+//   const endTime = new Date("Dec 7, 2021 17:00:00").getTime();
+//   let updateClock = setInterval(function() {
+//     const now = new Date().getTime();
+//     const total = endTime - now;
+//     const days = Math.floor(total / (1000 * 60 * 60 * 24));
+//     const hours = days * 24 + Math.floor((total / (1000 * 60 * 60)) % 24);
+//     const minutes = Math.floor((total / 1000 / 60) % 60);
+//     const seconds = Math.floor((total / 1000)) % 60
+//       if (hours >= 100) {
+//           hoursSpan.text(('0' + hours).slice(-3));
+//       } else {
+//           hoursSpan.text(('0' + hours).slice(-2));
+//       }
+//
+//     minutesSpan.text(('0' + minutes).slice(-2));
+//     secondsSpan.text(('0' + seconds).slice(-2));
+//
+//     $('.time-dots').css('visibility', 'hidden');
+//     setTimeout(function() {
+//         $('.time-dots').css('visibility', 'visible');
+//     }, 500);
+//
+//     if (total < 1) {
+//       clearInterval(updateClock);
+//       clock.remove();
+//     }
+//   }, 1000);
+// }
+// initializeClock();
+
+$('.login-button').click(function(event){
+    event.target.blur();
+});
+
+$(document).ready(function(){
+    // if (window.devicePixelRatio > 1) {
+    //     let images = $('img');
+    //     images.each(function(i) {
+    //         let lowres = $(this).attr('src');
+    //         let highres = lowres.replace(".", "@2x.");
+    //         $(this).attr('src', highres);
+    //     });
+    // }
+
+
+  let lineRound = document.querySelector('.line-round svg');
+  let arrowWaveLine = document.querySelector('.arrow-wave svg #arrow-wave-line');
+  let arrowWaveArrow = document.querySelector('.arrow-wave svg #arrow-wave-arrow');
+  if (!lineRound && !arrowWaveLine) return;
+
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      start: 'top 80%',
+      end: 'bottom 20%',
+    }
+  })
+
+  gsap.to(arrowWaveLine, {
+    scrollTrigger: {
+      start: 'top 80%',
+      end: 'bottom 20%',
+      trigger: arrowWaveLine
+    },
+    strokeDashoffset: 0,
+    duration: 1.8,
+    ease: 'sine.out',
+  });
+
+  gsap.to(arrowWaveArrow, {
+    scrollTrigger: {
+      start: 'top 80%',
+      end: 'bottom 20%',
+      trigger: arrowWaveArrow
+    },
+    strokeDashoffset: 0,
+    duration: 1.4,
+    delay: .34,
+    ease: 'sine.inOut'
+  })
+
+  gsap.to(lineRound, {
+    scrollTrigger: {
+      start: 'top center',
+      end: 'bottom center',
+      trigger: lineRound
+    },
+    strokeDashoffset: 0,
+    duration: 1,
+    ease: 'sine.inOut'
+  });
+});
+
+$(".dropdown-btn").hover(function(){
+    let dropdownContent = document.getElementsByClassName("dropdown-list")[0];
+    if (dropdownContent.style.display === "none") {
+        dropdownContent.style.display = "block";
+    }
+});
+
+// $(document).ready(function() {
+//     let cookiePolicyBanner = document.getElementById('cookie-law-info-bar').style.display;
+//     var wpAdminBar = document.getElementById('wpadminbar');
+//     if (wpAdminBar) {
+//         cookiePolicyBanner.css('top', '32px');
+//     }
+//
+//     if (cookiePolicyBanner === 'block') {
+//         $('body').css('margin-top', '4.3rem');
+//     } else {
+//         $('body').css('margin-top', 'unset');
+//     }
+//
+//     $('#wt-cli-privacy-save-btn, #wt-cli-accept-all-btn, #cookie_action_close_header_reject').on('click', function () {
+//         $('body').css('margin-top', 'unset');
+//     })
+// });
+
+
+// $(document).ready(function() {
+//     const sections = gsap.utils.toArray(".slide");
+//     let eff = document.querySelector(".efficiency-section-left-wrapper");
+//     gsap.to(sections, {
+//         xPercent: -100 * (sections.length - 1),
+//         ease: "none",
+//         scrollTrigger: {
+//             trigger: ".wrapper",
+//             pin: true,
+//             scrub: true,
+//             snap: 1 / (sections.length - 1),
+//             end: () => "+=" + (document.querySelector(".wrapper").offsetWidth - innerWidth)
+//         }
+//     });
+// });
+
+var $setter = $(".efficiency-section-slider");
+$(".horizontal-scroll-wrapper").css("max-height", $setter.width()+"px");
+
+if(window.location.pathname === "/beauty-salons/") {
+    $('#hero-section-wrapper').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/new-beauty/hero-beauty.webp)');
+    // document.getElementById("hero-section-wrapper").style.background = 'url(' + window.trafftAssetsDir[0] + '/images/industries/new-beauty/hero-beauty.png)';
+}
+else if(window.location.pathname === "/healthcare/") {
+    $('#hero-section-wrapper').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/new-healthcare/hero-healthcare.webp)');
+}
+else if(window.location.pathname === "/personal-services/") {
+    $('#hero-section-wrapper').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/new-personal-services/hero-personal-services.webp)');
+}
+else if(window.location.pathname === "/professional-services/") {
+    $('#hero-section-wrapper').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/new-professional-services/hero-professional-services.webp)');
+}
+else if(window.location.pathname === "/events-entertainment/") {
+    $('#hero-section-wrapper').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/new-events/hero-events.webp)');
+}
+else if(window.location.pathname === "/administration-officials/") {
+    $('#hero-section-wrapper').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/new-administrations/hero-administration.webp)');
+}
+else if(window.location.pathname === "/education-consulting/") {
+    $('#hero-section-wrapper').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/new-educations/hero-education.webp)');
+}
+else if(window.location.pathname === "/consulting/") {
+    $('#hero-section-wrapper').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/new-educations/hero-education.webp)');
+}
+else if(window.location.pathname === "/sports-training/") {
+    $('#hero-section-wrapper').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/new-sports/hero-sport.webp)');
+}
+else if(window.location.pathname === "/barbershop/") {
+    $('#hero-section-wrapper').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/new-barbershop/hero-barbershop.webp)');
+}
+else if(window.location.pathname === "/dental-clinic/") {
+    $('#hero-section-wrapper').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/new-dental/hero-dental.webp)');
+}
+else if(window.location.pathname === "/gyms/") {
+    $('#hero-section-wrapper').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/new-gym/hero-gym.webp)');
+}
+else if(window.location.pathname === "/personal-trainers/") {
+    $('#hero-section-wrapper').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/new-personal-trainers/hero-personal-trainers.webp)');
+}
+else if(window.location.pathname === "/cleaning-services/") {
+    $('#hero-section-wrapper').css('background-image', 'url(' + window.trafftAssetsDir[0] + '/images/industries/new-cleaning/hero-cleaning.webp)');
+}
+
+// Get the modal
+let modal = document.getElementById('myModal');
+
+// Get the main container and the body
+let body = document.getElementsByTagName('body');
+let container = document.getElementsByClassName('main-container');
+
+// Get the open button
+let btnOpen = document.getElementById("openPopup");
+
+// Get the open button
+let btnOpen2 = document.getElementById("openPopup2");
+
+// Get the open button
+let btnOpen1 = document.getElementById("openPopup1");
+
+// Get the open button
+let btnOpen5 = document.getElementById("openPopup5");
+
+// Get the close button
+let btnClose = document.getElementById("closeModal");
+
+// Open the modal
+// btnOpen.onclick = function() {
+//     modal.className = "Modal is-visuallyHidden";
+//     setTimeout(function() {
+//         container.className = "main-container is-blurred";
+//         modal.className = "Modal";
+//     }, 100);
+//     // container.parentElement.className = "ModalOpen";
+// }
+
+// btnOpen1.onclick = function() {
+//     modal.className = "Modal is-visuallyHidden";
+//     setTimeout(function() {
+//         container.className = "main-container is-blurred";
+//         modal.className = "Modal";
+//     }, 100);
+//     container.parentElement.className = "ModalOpen";
+// }
+
+// btnOpen2.onclick = function() {
+//     modal.className = "Modal is-visuallyHidden";
+//     setTimeout(function() {
+//         container.className = "main-container is-blurred";
+//         modal.className = "Modal";
+//     }, 100);
+//     container.parentElement.className = "ModalOpen";
+// }
+//
+// btnOpen5.onclick = function() {
+//     modal.className = "Modal is-visuallyHidden";
+//     setTimeout(function() {
+//         container.className = "main-container is-blurred";
+//         modal.className = "Modal";
+//     }, 100);
+//     container.parentElement.className = "ModalOpen";
+// }
+
+// Close the modal
+// btnClose.onclick = function() {
+//     modal.className = "Modal is-hidden is-visuallyHidden";
+//     body.className = "";
+//     container.className = "main-container";
+//     container.parentElement.className = "";
+// }
+
+// When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//     if (event.target == modal) {
+//         modal.className = "Modal is-hidden";
+//         body.className = "";
+//         container.className = "main-container";
+//         container.parentElement.className = "";
+//     }
+// }
+//
+// // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//     if (event.target == videoModal) {
+//         modal.className = "videoModal is-hidden";
+//         body.className = "";
+//         container.className = "main-container";
+//         container.parentElement.className = "";
+//     }
+// }
+
+function toggleVideo(state) {
+    // if state == 'hide', hide. Else: show video
+    let div = document.getElementById("popupVid");
+    let iframe = div.getElementsByTagName("iframe")[0].contentWindow;
+    div.style.display = state === 'hide' ? 'none' : 'block';
+    func = state === 'hide' ? 'pauseVideo' : 'playVideo';
+    iframe.postMessage('{"event":"command","func":"' + func + '","args":""}','*');
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.dropdown-btn')) {
+        let dropdowns = document.getElementsByClassName("w-dropdown-list")[0];
+        let i;
+        for (i = 0; i < dropdowns.length; i++) {
+            let openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+        if (dropdowns.classList.contains('w--open')) {
+            dropdowns.classList.remove('w--open');
+        }
+        if (dropdowns.style.display === "block") {
+            dropdowns.style.display = "none";
+        }
+    }
+}
+
+if (window.location.href.includes('pricing') || window.location.href.includes('affiliate')) {
+    let $carousel = $('.gallery').flickity({
+        prevNextButtons: true,
+        pageDots: true
+    });
+}
+
+function readMore(id) {
+    let btnText = document.getElementById("myBtn");
+    let btnText2 = document.getElementById("myBtn2");
+    if (id === 'myBtn') {
+        if (btnText.innerHTML === "Read more") {
+            btnText.innerHTML = "Read less";
+        } else {
+            btnText.innerHTML = "Read more"
+        }
+        $('.trust-pilot-card-inner').toggleClass('show-more');
+        $('.dots').toggleClass('show-more');
+        $('.more').toggleClass('show-more');
+    }
+
+
+    if (id === 'myBtn2') {
+        if (btnText2.innerHTML === "Read more") {
+            btnText2.innerHTML = "Read less";
+        } else {
+            btnText2.innerHTML = "Read more"
+        }
+        $('.trust-pilot-card-inner2').toggleClass('show-more');
+        $('.dots2').toggleClass('show-more');
+        $('.more2').toggleClass('show-more');
+    }
+}
+
+function readMore3() {
+    let dots = document.getElementById("dots3");
+    let moreText = document.getElementById("more3");
+    let btnText = document.getElementById("myBtn3");
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+    }
+}
+
+let $setterCard = $(".gallery-cell");
+document.querySelectorAll('#myBtn3').forEach( function(link) {
+    link.addEventListener('click', function() {
+        $(".flickity-viewport").css("height", $setterCard.height()+"px");
+    });
+});
+
+function readMore4() {
+    let dots = document.getElementById("dots4");
+    let moreText = document.getElementById("more4");
+    let btnText = document.getElementById("myBtn4");
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+    }
+}
+
+let $setterCard2 = $(".gallery-cell2");
+document.querySelectorAll('#myBtn4').forEach( function(link) {
+    link.addEventListener('click', function() {
+        $(".flickity-viewport").css("height", $setterCard2.height()+"px");
+        let dots = document.getElementById("dots3");
+        let btnText = document.getElementById("myBtn3");
+        let moreText = document.getElementById("more3");
+        let dots5 = document.getElementById("dots5");
+        let btnText5 = document.getElementById("myBtn5");
+        let moreText5 = document.getElementById("more5");
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+        dots5.style.display = "inline";
+        btnText5.innerHTML = "Read more";
+        moreText5.style.display = "none";
+
+    });
+});
+
+function readMore5() {
+    let dots = document.getElementById("dots5");
+    let moreText = document.getElementById("more5");
+    let btnText = document.getElementById("myBtn5");
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+    }
+}
+
+let $setterCard3 = $(".gallery-cell3");
+document.querySelectorAll('#myBtn5').forEach( function(link) {
+    link.addEventListener('click', function() {
+        $(".flickity-viewport").css("height", $setterCard3.height()+"px");
+        let dots = document.getElementById("dots3");
+        let btnText = document.getElementById("myBtn3");
+        let moreText = document.getElementById("more3");
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+    });
+});
+
+function readMoreAppSumo(id) {
+    let appSumoBtn = document.getElementById("appSumoBtn");
+    let appSumoBtn2 = document.getElementById("appSumoBtn2");
+    let appSumoBtn3 = document.getElementById("appSumoBtn3");
+    let appSumoBtn4 = document.getElementById("appSumoBtn4");
+    let appSumoBtn5 = document.getElementById("appSumoBtn5");
+
+    if (id === 'appSumoBtn') {
+        if (appSumoBtn.innerHTML === "Read more") {
+            appSumoBtn.innerHTML = "Read less";
+        } else {
+            appSumoBtn.innerHTML = "Read more"
+        }
+        $('.app-sumo-card-inner').toggleClass('show-more');
+        $('.dots-appsumo').toggleClass('show-more');
+        $('.more-appsumo').toggleClass('show-more');
+    }
+
+    if (id === 'appSumoBtn2') {
+        if (appSumoBtn2.innerHTML === "Read more") {
+            appSumoBtn2.innerHTML = "Read less";
+        } else {
+            appSumoBtn2.innerHTML = "Read more"
+        }
+        $('.app-sumo-card-inner2').toggleClass('show-more');
+        $('.dots-appsumo2').toggleClass('show-more');
+        $('.more-appsumo2').toggleClass('show-more');
+    }
+
+    if (id === 'appSumoBtn3') {
+        if (appSumoBtn3.innerHTML === "Read more") {
+            appSumoBtn3.innerHTML = "Read less";
+        } else {
+            appSumoBtn3.innerHTML = "Read more"
+        }
+        $('.app-sumo-card-inner3').toggleClass('show-more');
+        $('.dots-appsumo3').toggleClass('show-more');
+        $('.more-appsumo3').toggleClass('show-more');
+    }
+
+    if (id === 'appSumoBtn4') {
+        if (appSumoBtn4.innerHTML === "Read more") {
+            appSumoBtn4.innerHTML = "Read less";
+        } else {
+            appSumoBtn4.innerHTML = "Read more"
+        }
+        $('.app-sumo-card-inner4').toggleClass('show-more');
+        $('.dots-appsumo4').toggleClass('show-more');
+        $('.more-appsumo4').toggleClass('show-more');
+    }
+
+    if (id === 'appSumoBtn5') {
+        if (appSumoBtn5.innerHTML === "Read more") {
+            appSumoBtn5.innerHTML = "Read less";
+        } else {
+            appSumoBtn5.innerHTML = "Read more"
+        }
+        $('.app-sumo-card-inner5').toggleClass('show-more');
+        $('.dots-appsumo5').toggleClass('show-more');
+        $('.more-appsumo5').toggleClass('show-more');
+    }
+}
+
+function readMoreAppSumoRes(id) {
+    let appSumoBtn6 = document.getElementById("appSumoBtn6");
+    let appSumoBtn7 = document.getElementById("appSumoBtn7");
+    let appSumoBtn8 = document.getElementById("appSumoBtn8");
+    let appSumoBtn9 = document.getElementById("appSumoBtn9");
+    let appSumoBtn10 = document.getElementById("appSumoBtn10");
+
+    if (id === 'appSumoBtn6') {
+        if (appSumoBtn6.innerHTML === "Read more") {
+            appSumoBtn6.innerHTML = "Read less";
+        } else {
+            appSumoBtn6.innerHTML = "Read more"
+        }
+        $('.app-sumo-card-inner6').toggleClass('show-more');
+        $('.dots-appsumo6').toggleClass('show-more');
+        $('.more-appsumo6').toggleClass('show-more');
+    }
+
+    if (id === 'appSumoBtn7') {
+        if (appSumoBtn7.innerHTML === "Read more") {
+            appSumoBtn7.innerHTML = "Read less";
+        } else {
+            appSumoBtn7.innerHTML = "Read more"
+        }
+        $('.app-sumo-card-inner7').toggleClass('show-more');
+        $('.dots-appsumo7').toggleClass('show-more');
+        $('.more-appsumo7').toggleClass('show-more');
+    }
+
+    if (id === 'appSumoBtn8') {
+        if (appSumoBtn8.innerHTML === "Read more") {
+            appSumoBtn8.innerHTML = "Read less";
+        } else {
+            appSumoBtn8.innerHTML = "Read more"
+        }
+        $('.app-sumo-card-inner8').toggleClass('show-more');
+        $('.dots-appsumo8').toggleClass('show-more');
+        $('.more-appsumo8').toggleClass('show-more');
+    }
+
+    if (id === 'appSumoBtn9') {
+        if (appSumoBtn9.innerHTML === "Read more") {
+            appSumoBtn9.innerHTML = "Read less";
+        } else {
+            appSumoBtn9.innerHTML = "Read more"
+        }
+        $('.app-sumo-card-inner9').toggleClass('show-more');
+        $('.dots-appsumo9').toggleClass('show-more');
+        $('.more-appsumo9').toggleClass('show-more');
+    }
+
+    if (id === 'appSumoBtn10') {
+        if (appSumoBtn10.innerHTML === "Read more") {
+            appSumoBtn10.innerHTML = "Read less";
+        } else {
+            appSumoBtn10.innerHTML = "Read more"
+        }
+        $('.app-sumo-card-inner10').toggleClass('show-more');
+        $('.dots-appsumo10').toggleClass('show-more');
+        $('.more-appsumo10').toggleClass('show-more');
+    }
+}
+
+let $setterCard4 = $(".gallery-cell7");
+document.querySelectorAll('#appSumoBtn9').forEach( function(link) {
+    link.addEventListener('click', function() {
+        $(".flickity-viewport").css("height", $setterCard4.height()+"px");
+    });
+});
+
+function readMoreCapterra(id) {
+    let capterraBtn = document.getElementById("capterraBtn");
+    let capterraBtn2 = document.getElementById("capterraBtn2");
+    let capterraBtn3 = document.getElementById("capterraBtn3");
+    let capterraBtn4 = document.getElementById("capterraBtn4");
+    let capterraBtn5 = document.getElementById("capterraBtn5");
+    let capterraBtn6 = document.getElementById("capterraBtn6");
+
+    if (id === 'capterraBtn') {
+        if (capterraBtn.innerHTML === "Read more") {
+            capterraBtn.innerHTML = "Read less";
+        } else {
+            capterraBtn.innerHTML = "Read more"
+        }
+        $('.capterra-card-inner').toggleClass('show-more');
+        $('.dots-capterra').toggleClass('show-more');
+        $('.more-capterra').toggleClass('show-more');
+    }
+
+    if (id === 'capterraBtn2') {
+        if (capterraBtn2.innerHTML === "Read more") {
+            capterraBtn2.innerHTML = "Read less";
+        } else {
+            capterraBtn2.innerHTML = "Read more"
+        }
+        $('.capterra-card-inner2').toggleClass('show-more');
+        $('.dots-capterra2').toggleClass('show-more');
+        $('.more-capterra2').toggleClass('show-more');
+    }
+
+    if (id === 'capterraBtn3') {
+        if (capterraBtn3.innerHTML === "Read more") {
+            capterraBtn3.innerHTML = "Read less";
+        } else {
+            capterraBtn3.innerHTML = "Read more"
+        }
+        $('.capterra-card-inner3').toggleClass('show-more');
+        $('.dots-capterra3').toggleClass('show-more');
+        $('.more-capterra3').toggleClass('show-more');
+    }
+
+    if (id === 'capterraBtn4') {
+        if (capterraBtn4.innerHTML === "Read more") {
+            capterraBtn4.innerHTML = "Read less";
+        } else {
+            capterraBtn4.innerHTML = "Read more"
+        }
+        $('.capterra-card-inner4').toggleClass('show-more');
+        $('.dots-capterra4').toggleClass('show-more');
+        $('.more-capterra4').toggleClass('show-more');
+    }
+
+    if (id === 'capterraBtn5') {
+        if (capterraBtn5.innerHTML === "Read more") {
+            capterraBtn5.innerHTML = "Read less";
+        } else {
+            capterraBtn5.innerHTML = "Read more"
+        }
+        $('.capterra-card-inner5').toggleClass('show-more');
+        $('.dots-capterra5').toggleClass('show-more');
+        $('.more-capterra5').toggleClass('show-more');
+    }
+
+    if (id === 'capterraBtn6') {
+        if (capterraBtn6.innerHTML === "Read more") {
+            capterraBtn6.innerHTML = "Read less";
+        } else {
+            capterraBtn6.innerHTML = "Read more"
+        }
+        $('.capterra-card-inner6').toggleClass('show-more');
+        $('.dots-capterra6').toggleClass('show-more');
+        $('.more-capterra6').toggleClass('show-more');
+    }
+}
+
+let $setterCard5 = $(".gallery-cell11");
+document.querySelectorAll('#capterraBtn6').forEach( function(link) {
+    link.addEventListener('click', function() {
+        $(".flickity-viewport").css("height", $setterCard5.height()+"px");
+    });
+});
+

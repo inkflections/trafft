@@ -1,0 +1,30 @@
+(function () {
+
+    if (!paddle_settings.vendor_id) {
+        console.log('Paddle vendor ID not set');
+        return;
+    }
+
+    Paddle.Setup({ vendor: parseInt(paddle_settings.vendor_id) });
+
+    var setDomain = "trafft.com", getCookies = function() {
+        for (var b = document.cookie.split(";"), c = {}, a = 0; a < b.length; a++) {
+            var d = b[a].split("=");
+            c[(d[0] + "").trim()] = decodeURIComponent(d[1]);
+        }
+        return c;
+    }, setCookie = function(b, c, a, d) {
+        var e = new Date;
+        e.setTime(e.getTime() + 864E5 * a);
+        a = "expires=" + e.toUTCString();
+        document.cookie = b + "=" + c + ";" + a + ";domain=" + d + ";path=/";
+    }, deleteCookie = function(b) {
+        document.cookie = b + "=;expires=Thu, 01 Jan 1970 00:00:01 GMT;";
+    }, setPaddleCookies = function(b) {
+        var c = getCookies();
+        Object.keys(c).forEach(function(a) {
+            a.startsWith("paddlejs_") && (deleteCookie(a), setCookie(a, c[a], 30, b));
+        });
+    };
+    window.addEventListener ? window.addEventListener("load", setPaddleCookies(setDomain)) : window.attachEvent && window.attachEvent("onload", setPaddleCookies(setDomain));
+})();
